@@ -9,7 +9,7 @@ public class ChocolateDecorator extends CoffeeDecorator {
     }
 
     @Override
-    public double getCost() {
-        return decoratedCoffee.getCost() + 0.7; // Доплата за шоколад
+    public double getPrice() {
+        return decoratedCoffee.getPrice() + 0.7;
     }
 }

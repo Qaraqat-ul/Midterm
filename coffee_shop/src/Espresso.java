@@ -1,11 +1,5 @@
 public class Espresso extends Coffee {
-    @Override
-    public String getDescription() {
-        return "Espresso";
-    }
-
-    @Override
-    public double getCost() {
-        return 2.0;
+    public Espresso(Size size) {
+        super("Espresso", 2.0, size);
     }
 }

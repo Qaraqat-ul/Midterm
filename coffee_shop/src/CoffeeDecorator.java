@@ -2,6 +2,7 @@ public abstract class CoffeeDecorator extends Coffee {
     protected Coffee decoratedCoffee;
 
     public CoffeeDecorator(Coffee coffee) {
+        super(coffee.getDescription(), coffee.getPrice(), coffee.size);
         this.decoratedCoffee = coffee;
     }
 
@@ -11,7 +12,7 @@ public abstract class CoffeeDecorator extends Coffee {
     }
 
     @Override
-    public double getCost() {
-        return decoratedCoffee.getCost();
+    public double getPrice() {
+        return decoratedCoffee.getPrice();
     }
 }
